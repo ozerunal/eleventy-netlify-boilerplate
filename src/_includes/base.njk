@@ -1,16 +1,18 @@
 <!doctype html>
-<html {% if section %} data-current="{{ section }}"{% endif %} lang="en">
+<html lang="{{ locale }}" dir="{{ dir }}">
 	<head>
 		{% set css %}
 			{% include "assets/css/inline.css" %}
 		{% endset %}
 		<style>{{ css | cssmin | safe }}</style>
+		<link rel="stylesheet" href="{{ '../_includes/assets/css/tailwind.css' | url }}">
 	</head>
 	<body>
 
-		<header>
+		<header class="max-w-3xl mx-auto py-12 min-h-screen">
 			<em>
 				<a href="{{ '/' | url }}">{{ title }}</a>
+				{{ 'hello' | i18n }}
 			</em>
 		</header>
 

@@ -3,11 +3,43 @@ const CleanCSS = require("clean-css");
 const UglifyJS = require("uglify-js");
 const htmlmin = require("html-minifier");
 const eleventyNavigationPlugin = require("@11ty/eleventy-navigation");
+const i18n = require('eleventy-plugin-i18n');
 
 module.exports = function(eleventyConfig) {
 
   // Eleventy Navigation https://www.11ty.dev/docs/plugins/navigation/
   eleventyConfig.addPlugin(eleventyNavigationPlugin);
+
+  eleventyConfig.addPlugin(i18n, {
+    translations: {
+      hello: {
+        'en-GB': 'and I say unto thee, hellow',
+        'tr-TR': 'Merhaba ula usta',
+        'nl-BE': "Welkom welkom, bij de 3 biggetjes"
+      }
+    },
+    fallbackLocales: {
+      '*': 'en-GB'
+    }
+  });
+
+  // Browsersync
+  // Redirect from root to default language root during --serve
+  // Can also be handled by netlify.toml?
+  eleventyConfig.setBrowserSyncConfig({
+    callbacks: {
+      ready: function (err, bs) {
+        bs.addMiddleware('*', (req, res) => {
+          if (req.url === '/') {
+            res.writeHead(302, {
+              location: '/en-GB/'
+            });
+            res.end();
+          }
+        });
+      }
+    }
+  });
 
   // Configuration API: use eleventyConfig.addLayoutAlias(from, to) to add
   // layout aliases! Say you have a bunch of existing content using
