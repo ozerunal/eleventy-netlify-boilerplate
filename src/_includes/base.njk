@@ -1,0 +1,23 @@
+<!doctype html>
+<html lang="{{ locale }}" dir="{{ dir }}">
+	<head>
+		{% set cssFile = '../_includes/assets/css/' + assethandler.cssFileName %}
+		{% set jsFile = '../_includes/assets/js/' + assethandler.jsFileName %}
+		
+		<link rel="stylesheet" href="{{ cssFile | url }}">
+		<script type="module" defer src="{{ jsFile }}"></script>
+	</head>
+	<body>
+		<div>
+			
+		</div>
+
+		{% include 'components/header.njk' %}
+
+		<main>
+			{{ layoutContent | safe }}
+		</main>
+
+	</body>
+
+</html>
