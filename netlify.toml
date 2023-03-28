@@ -10,6 +10,12 @@
 
 [[redirects]]
   from = "/"
+  to = "/nl-BE/"
+  status = 200
+  conditions = {Language = ["nl"]}
+
+[[redirects]]
+  from = "/"
   to = "/tr-TR/"
   status = 200
   conditions = {Language = ["tr"]}
@@ -26,6 +32,13 @@
   to = "/tr-TR/:splat"
   status = 302
   conditions = {Language = ["tr"]}
+
+# Redirect for end-user’s browser preference override
+[[redirects]]
+  from = "/*"
+  to = "/nl-BE/:splat"
+  status = 302
+  conditions = {Language = ["nl"]}
 
 # Default
 [[redirects]]

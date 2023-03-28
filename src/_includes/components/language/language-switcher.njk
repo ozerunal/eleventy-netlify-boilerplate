@@ -1,0 +1,36 @@
+{% set something = locale %}
+
+<section>
+    <details class="relative">
+        <summary>
+            {% if 'nl-BE' in locale %}
+      		    {% include 'components/language/belgian-flag.njk' %}
+            {% endif %}
+            {% if 'tr-TR' in locale %}
+      		    {% include 'components/language/turkish-flag.njk' %}
+            {% endif %}
+            {% if 'en-GB' in locale %}
+      		    {% include 'components/language/english-flag.njk' %}
+            {% endif %}
+        </summary>
+        <div class="absolute right-0 bg-white shadow-md">
+            <ul class="p-5 flex flex-col">
+                {% if 'nl-BE' not in locale %}
+                    <li class="py-2">
+                        <a class="flex gap-4" href="/nl-BE">{% include 'components/language/belgian-flag.njk' %} Nederlands</a>
+                    </li>
+                {% endif %}
+                {% if 'tr-TR' not in locale %}
+                    <li class="py-2">
+                        <a class="flex gap-4" href="/tr-TR">{% include 'components/language/turkish-flag.njk' %} Türkçe</a>
+                    </li>
+                {% endif %}
+                {% if 'en-GB' not in locale %}
+                    <li class="py-2">
+                        <a class="flex gap-4" href="/en-GB">{% include 'components/language/english-flag.njk' %} English</a>
+                    </li>
+                {% endif %}
+            </ul>
+        </div>
+    </details>
+</section>
