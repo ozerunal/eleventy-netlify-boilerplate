@@ -1,20 +1,18 @@
 <!doctype html>
 <html lang="{{ locale }}" dir="{{ dir }}">
 	<head>
-		{% set css %}
-			{% include "assets/css/inline.css" %}
-		{% endset %}
-		<style>{{ css | cssmin | safe }}</style>
-		<link rel="stylesheet" href="{{ '../_includes/assets/css/tailwind.css' | url }}">
+		{% set cssFile = '../_includes/assets/css/' + assethandler.cssFileName %}
+		{% set jsFile = '../_includes/assets/js/' + assethandler.jsFileName %}
+		
+		<link rel="stylesheet" href="{{ cssFile | url }}">
+		<script type="module" defer src="{{ jsFile }}"></script>
 	</head>
 	<body>
+		<div>
+			
+		</div>
 
-		<header class="max-w-3xl mx-auto py-12 min-h-screen">
-			<em>
-				<a href="{{ '/' | url }}">{{ title }}</a>
-				{{ 'hello' | i18n }}
-			</em>
-		</header>
+		{% include 'components/header.njk' %}
 
 		<main>
 			{{ layoutContent | safe }}

@@ -3,12 +3,13 @@
   "version": "1.0.3",
   "description": "A boilerplate for building a fast static website with the Eleventy static site generator, for deployment to Netlify.",
   "scripts": {
-    "start": "npm-run-all -p dev:*",
-    "build": "run-s build:*",
+    "start": "webpack && npm-run-all -p dev:*",
+    "build": "webpack --env production && run-s build:*",
     "dev:11ty": "eleventy --serve",
     "dev:css": "tailwindcss -i src/_includes/assets/css/tailwind.css -o public/_includes/assets/css/tailwind.css --watch --postcss",
     "build:11ty": "eleventy",
-    "build:css": "tailwindcss -i src/_includes/src/assets/css/tailwind.css -o public/_includes/assets/css/tailwind.css --postcss"
+    "build:css": "cross-env NODE_ENV=production tailwindcss -i src/_includes/assets/css/tailwind.css -o public/_includes/assets/css/tailwind.css --postcss",
+    "webpack": "webpack"
   },
   "repository": {
     "type": "git",
@@ -37,8 +38,14 @@
   },
   "dependencies": {
     "@11ty/eleventy-navigation": "^0.3.5",
+    "alpinejs": "^3.12.0",
     "clean-css": "^5.3.1",
+    "cross-env": "^7.0.3",
     "html-minifier": "^4.0.0",
-    "uglify-js": "^3.17.4"
+    "postcss-csso": "^6.0.1",
+    "postcss-hash": "^3.0.0",
+    "uglify-js": "^3.17.4",
+    "webpack": "^5.76.3",
+    "webpack-cli": "^5.0.1"
   }
 }
