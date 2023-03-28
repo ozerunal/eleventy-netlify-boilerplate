@@ -1,8 +1,6 @@
-{% set something = locale %}
-
 <section>
     <details class="relative">
-        <summary>
+        <summary class="flex gap-4">
             {% if 'nl-BE' in locale %}
       		    {% include 'components/language/belgian-flag.njk' %}
             {% endif %}
@@ -12,9 +10,10 @@
             {% if 'en-GB' in locale %}
       		    {% include 'components/language/english-flag.njk' %}
             {% endif %}
+            <span class="lg:hidden"> Select language </span>
         </summary>
-        <div class="absolute right-0 bg-white shadow-md">
-            <ul class="p-5 flex flex-col">
+        <div class="lg:absolute lg:right-0 lg:bg-white lg:shadow-md">
+            <ul class="lg:p-5 py-2 flex flex-col">
                 {% if 'nl-BE' not in locale %}
                     <li class="py-2">
                         <a class="flex gap-4" href="/nl-BE">{% include 'components/language/belgian-flag.njk' %} Nederlands</a>
