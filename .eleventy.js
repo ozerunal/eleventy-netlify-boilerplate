@@ -4,6 +4,7 @@ const UglifyJS = require("uglify-js");
 const htmlmin = require("html-minifier");
 const eleventyNavigationPlugin = require("@11ty/eleventy-navigation");
 const i18n = require('eleventy-plugin-i18n');
+const translations = require("./src/_data/translations");
 
 module.exports = function(eleventyConfig) {
 
@@ -11,13 +12,7 @@ module.exports = function(eleventyConfig) {
   eleventyConfig.addPlugin(eleventyNavigationPlugin);
 
   eleventyConfig.addPlugin(i18n, {
-    translations: {
-      hello: {
-        'en-GB': 'and I say unto thee, hellow',
-        'tr-TR': 'Merhaba ula usta',
-        'nl-BE': "Welkom welkom, bij de 3 biggetjes"
-      }
-    },
+    translations: translations,
     fallbackLocales: {
       '*': 'en-GB'
     }

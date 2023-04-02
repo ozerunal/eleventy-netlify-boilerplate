@@ -10,7 +10,7 @@
             {% if 'en-GB' in locale %}
       		    {% include 'components/language/english-flag.njk' %}
             {% endif %}
-            <span class="lg:hidden"> Select language </span>
+            <span class="lg:hidden">{{ 'header.selectlanguage' | i18n }}</span>
         </summary>
         <div class="lg:absolute lg:right-0 lg:bg-white lg:shadow-md">
             <ul class="lg:p-5 py-2 flex flex-col">
