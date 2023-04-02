@@ -1,5 +1,5 @@
 <!doctype html>
-<html lang="{{ locale }}" dir="{{ dir }}">
+<html lang="{{ locale }}" dir="{{ dir }}" style="scroll-padding-top: 64px">
 	<head>
 		<meta charset="utf-8">
 		<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
@@ -21,6 +21,9 @@
 			{% include 'components/video-banner.njk' %}
 			{% include 'components/services/services.njk' %}
 			{% include 'components/cta.njk' %}
+			{% include 'components/aboutus.njk' %}
+			{% include 'components/contactus.njk' %}
+			{% include 'components/copyright.njk' %}
 			{{ layoutContent | safe }}
 		</main>
 

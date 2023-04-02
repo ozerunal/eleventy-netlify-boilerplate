@@ -1,10 +1,7 @@
-<section class="mx-auto max-w-7xl p-4">
+<section id="services" class="mx-auto max-w-7xl p-4">
     <div class="grid grid-flow-row justify-items-center gap-8 text-neutral-600 sm:grid-cols-1 md:grid-cols-2 lg:grid-cols-3 xl:grid-cols-3">
-        {% set imgUrl = "../static/img/service-2.jpg" %}
-        {% include 'components/services/service-card.njk' %}
-        {% set imgUrl = "../static/img/service-4.jpg" %}
-        {% include 'components/services/service-card.njk' %}
-        {% set imgUrl = "../static/img/service-5.jpg" %}
-        {% include 'components/services/service-card.njk' %}
+        {% for service in services %}
+            {% include 'components/services/service-card.njk' %}
+        {% endfor %}
     </div>
 </section>
