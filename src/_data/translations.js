@@ -166,6 +166,6 @@ module.exports =
     copyright: {
         'en-GB': 'Nimbus Forwarding is part of Nimbus Logistics BV - BE 0787 337 518',
         'tr-TR': "Nimbus Forwarding, Nimbus Logistics BV'nin bir parçasıdır - BE 0787 337 518",
-        'nl-BE': 'Nimbus Expeditie is onderdeel van Nimbus Logistics BV - BE 0787 337 518'
+        'nl-BE': 'Nimbus Forwarding is onderdeel van Nimbus Logistics BV - BE 0787 337 518'
     }
 }
