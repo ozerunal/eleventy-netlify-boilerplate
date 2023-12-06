@@ -38,7 +38,7 @@ module.exports =
             },
             desc: {
                 'en-GB': 'Nimbus Forwarding offers a custom made solution for all your forwarding and shipping needs. With out ever growing network, we are certain we can provide the best solution.',
-                'tr-TR': 'Nimbus Forwarding, tüm yönlendirme ve nakliye ihtiyaçlarınız için özel olarak hazırlanmış bir çözüm sunar. Sürekli büyüyen ağımızla en iyi çözümü sunabileceğimizden eminiz.',
+                'tr-TR': '"Anahtar Teslim Nakliye" çözümleri sunan bir firmadır. Sürekli büyüyen bir acente ağına sahip olmanın yanı sıra, deneyimli ekibimizle en iyi çözümü sunmaktan gurur duyuyoruz.',
                 'nl-BE': 'Nimbus Forwarding biedt een op maat gemaakte oplossing voor al uw expeditie- en verzendbehoeften. Met ons steeds groter wordende netwerk weten we zeker dat we de beste oplossing kunnen bieden.'
             }
         },
@@ -50,7 +50,7 @@ module.exports =
             },
             desc: {
                 'en-GB': 'As Nimbus Forwarding we pride ourselves to be a reliable and confident partner in dealing with any custom clearance matters. The long years of experience of our staff ensures the best approach.',
-                'tr-TR': 'Nimbus Forwarding olarak, herhangi bir gümrükleme konusuyla ilgilenirken güvenilir bir ortak olmaktan gurur duyuyoruz. Personelimizin uzun yıllara dayanan deneyimi, en iyi yaklaşımı sağlar.',
+                'tr-TR': 'Sevkiyatlarınızın başından sonuna kadar güvende olmasını sağlayacak bir adres olarak gümrükleme ve sigorta operasyonlarınızı güvenle yürütebileceğiniz bir hizmet sunmaktayız.',
                 'nl-BE': 'Als Nimbus Forwarding kunnen we met trots meedelen dat we een betrouwbare en zelfverzekerde partner zijn voor het afhandelen van alle inklaringskwesties. De jarenlange ervaring van onze medewerkers zorgt voor de beste aanpak.'
             }
         },
@@ -62,7 +62,7 @@ module.exports =
             },
             desc: {
                 'en-GB': 'Delivering goods on Time and intact. As Nimbus Forwarding we have amassed a vast network of trustworthy partners which can do exactly that.',
-                'tr-TR': 'Malları zamanında ve eksiksiz teslim etmek. Nimbus Forwarding olarak, tam olarak bunu yapabilen güvenilir ortaklardan oluşan geniş bir ağ oluşturduk.',
+                'tr-TR': "Avrupa'nın dört bir yanında karayolu taşımacılığı konusunda uzman iş ortaklarına sahip geniş bir ağa sahibiz. Bu ağ, sevkiyatların sorunsuz ve zamanında teslimatı konusundaki kararlılığımızı yansıtmaktadır.",
                 'nl-BE': 'Goederen op tijd en intact leveren. Als Nimbus Forwarding hebben we een uitgebreid netwerk van betrouwbare partners opgebouwd die precies dat kunnen.'
             }
         }
@@ -97,7 +97,7 @@ module.exports =
         },
         desc: {
             'en-GB': 'We are a young, dynamic team. Flexibility, service and many more qualities make sure we are always prepared to deliver the utmost standard regarding logistics of any kind.',
-            'tr-TR': 'Biz genç, dinamik bir ekibiz. Esneklik, hizmet ve daha birçok nitelik, her türlü lojistik konusunda en yüksek standardı sunmaya her zaman hazır olmamızı sağlar.',
+            'tr-TR': 'Nimbus Forwarding, lojistik sektöründe yenilikçi bir yaklaşımla faaliyet gösteren bir kuruluştur. Genç, dinamik ve deneyimli bir ekip tarafından yönetilmekte olan firmamiz ile musterilerimize en yüksek kalitede ve en güvenilir lojistik çözümleri sunma taahhüdümüz, işimizin temelini oluşturur.',
             'nl-BE': 'We zijn een jong, dynamisch team. Flexibiliteit, service en nog veel meer kwaliteiten zorgen ervoor dat we altijd bereid zijn om de hoogste standaard te leveren op het gebied van logistiek van welke aard dan ook.'
         },
         sect1title: {
@@ -112,12 +112,12 @@ module.exports =
         },
         sect2title: {
             'en-GB': 'Service',
-            'tr-TR': 'Hizmet',
+            'tr-TR': 'Üstün Hizmet',
             'nl-BE': 'Dienstverlening'
         },
         sect2desc: {
             'en-GB': 'We pride ourselves with our service, being of the utmost caliber. In our line of work, precision and perfection is not a luxury, but a simple necessity.',
-            'tr-TR': 'Son derece kalibreli olarak hizmetimizle gurur duyuyoruz. Bizim işimizde hassasiyet ve mükemmellik bir lüks değil, basit bir gerekliliktir.',
+            'tr-TR': 'Işimizin her aşamasında kaliteyi esas alır. Hassasiyet, mükemmellik ve müşteri memnuniyeti, şirketimizin ana odak noktalarıdır. Hizmetlerimizi entelektüel bir yaklaşımla sunarız ve müşterilerimize en iyi hizmeti sağlamak için sürekli olarak çaba harcamaktan gurur duyarız.',
             'nl-BE': 'We zijn trots op onze service, die van het hoogste kaliber is. In ons werk is precisie en perfectie geen luxe, maar pure noodzaak.'
         },
         sect3title: {
