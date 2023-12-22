@@ -47,8 +47,8 @@
   status = 302
 
 [[redirects]]
-  from = "/admin/*"
-  to = "/admin/:splat"
+  from = "/admin"
+  to = "/admin:splat"
   force = true
   status = 200
   conditions = {Role = ["admin"]}
