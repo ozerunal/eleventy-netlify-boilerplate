@@ -79,7 +79,7 @@ module.exports = function(eleventyConfig) {
   eleventyConfig.addPassthroughCopy("static/img");
   eleventyConfig.addPassthroughCopy("admin/");
   eleventyConfig.addPassthroughCopy("login/");
-  eleventyConfig.addPassthroughCopy("_redirects.txt");
+  eleventyConfig.addPassthroughCopy("_redirects");
   eleventyConfig.addPassthroughCopy("static/videos");
 
   /* Markdown Plugins */

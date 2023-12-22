@@ -1,5 +1,0 @@
-/admin/*  /admin/:splat  200!  Role=admin
-/admin/*  /login  401!
-
-/login/*  /login/:splat  200!  Role=admin
-/login/*  /admin  401!
