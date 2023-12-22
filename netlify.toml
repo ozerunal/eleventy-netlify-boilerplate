@@ -7,6 +7,12 @@
 # Redirect rule example
 # For more information see:- https://www.netlify.com/docs/netlify-toml-reference/
 
+[[redirects]]
+  from = "/admin/*"
+  to = "/admin/:splat"
+  force = true
+  status = 200
+  conditions = {Role = ["editor", "admin"]}
 
 [[redirects]]
   from = "/"
