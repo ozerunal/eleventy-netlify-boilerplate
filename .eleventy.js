@@ -78,6 +78,7 @@ module.exports = function(eleventyConfig) {
   eleventyConfig.addPassthroughCopy("favicon/");
   eleventyConfig.addPassthroughCopy("static/img");
   eleventyConfig.addPassthroughCopy("admin/");
+  eleventyConfig.addPassthroughCopy("login/");
   eleventyConfig.addPassthroughCopy("static/videos");
 
   /* Markdown Plugins */
